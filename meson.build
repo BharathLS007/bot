@@ -4,10 +4,17 @@ project('pandas', 'c', 'cpp',
 )
 
 py3 = import('python').find_installation('python3')
-numpy = py3.find_installation_dependency('numpy')
-
-cython = dependency('cython')
+numpy_dep = dependency('numpy', method: 'pkg-config', required: false)
+cython_dep = dependency('cython')
 
 sources = files('pandas/_libs/tslibs/base.pyx', 'pandas/_libs/tslibs/dtypes.pyx', 'pandas/_libs/tslibs/ccalendar.pyx')
 
-executable('pandas_ts', sources, dependencies: [cython, numpy])
+executable('pandas_ts', sources, dependencies: [cython_dep, numpy_dep])
+py3 = import('python').find_installation('python3')
+numpy_dep = dependency('numpy', method: 'pkg-config', required: false)
+cython_dep = dependency('cython')
+sources = files('pandas/_libs/tslibs/base.pyx', 'pandas/_libs/tslibs/dtypes.pyx', 'pandas/_libs/tslibs/ccalendar.pyx')
+
+executable('pandas_ts', sources, dependencies: [cython_dep, numpy_dep])
+
+
