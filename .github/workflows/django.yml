@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade pandas cython
+          pip install --upgrade pandas cython numpy
           sudo apt-get update
           sudo apt-get install -y meson ninja-build pkg-config
 
