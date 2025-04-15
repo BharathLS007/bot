@@ -1,1 +1,14 @@
-{"users": []}
+{
+    "users": [
+        {
+            "Name": "bharah",
+            "Age": 22,
+            "Gender": "male",
+            "Disease": "Impetigo",
+            "Sympts": [
+                "yellow_crust_ooze",
+                "high_fever"
+            ]
+        }
+    ]
+}
