@@ -396,7 +396,6 @@ def related_sym(psym1):
     else:
         return 0
 
-
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -405,13 +404,14 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route('/contact')
+@app.route("/contact")
 def contact():
-    return render_template('contact.html')
+    return render_template("contact.html")
 
-@app.route('/service')
+@app.route("/service")
 def service():
-    return render_template('service.html')
+    return render_template("service.html")
+
 
 @app.route("/get")
 def get_bot_response():
