@@ -1,1 +1,14 @@
-{"users": []}
+{
+    "users": [
+        {
+            "Name": "Bharath",
+            "Age": 22,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cough",
+                "headache"
+            ]
+        }
+    ]
+}
