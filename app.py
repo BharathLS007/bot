@@ -47,8 +47,6 @@ for i in range(len(df_tr)):
 ####################################################            dont do anything in above         ###########################################################################################################
 # #database connection 
 
-
-
 # Replace 'your_username' and 'your_password' with your MySQL credentials
 
 # ✅ Function to store patient data
@@ -148,7 +146,6 @@ all_symp_pr = [preprocess(sym) for sym in all_symp]
 # associate each processed symp with column name
 col_dict = dict(zip(all_symp_pr, all_symp_col))
 
-
 # II- Syntactic Similarity
 
 # Returns all the subsets of a set. This is a generator.
@@ -172,7 +169,6 @@ def sort(a):
     a.pop()
     return a
 
-
 # find all permutations of a list
 def permutations(s):
     permutations = list(itertools.permutations(s))
@@ -191,7 +187,6 @@ def DoesExist(txt):
                 # print(sym)
                 return sym
     return False
-
 
 # Jaccard similarity 2docs
 def jaccard_set(str1, str2):
