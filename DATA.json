@@ -71,6 +71,26 @@
                 "chills",
                 "shivering"
             ]
+        },
+        {
+            "Name": "anandh",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
+        },
+        {
+            "Name": "anandh",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
         }
     ]
 }

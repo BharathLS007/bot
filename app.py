@@ -439,7 +439,7 @@ def get_bot_response():
                 session["name"] = name
                 session["age"] = age
                 session["gender"] = gender
-    if s.upper() == "OK":
+    if s.upper() == "HI":
         return "What is your name ?"
     if 'name' not in session and 'step' not in session:
         session['name'] = s
