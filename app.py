@@ -11,6 +11,7 @@ import joblib
 from flask import Flask, render_template, request, session ,jsonify
 from flask_sqlalchemy import SQLAlchemy
 import matplotlib.pyplot as plt
+import os
 #import mysql.connector
 
 app = Flask(__name__)
@@ -18,21 +19,26 @@ app = Flask(__name__)
 nlp = spacy.load('en_core_web_sm')
 
 # save data
-data = {"users": []}
-with open('DATA.json', 'w') as outfile:
-    json.dump(data, outfile)
 
+# Only create the JSON file if it doesn't exist
+if not os.path.exists('DATA.json'):
+    with open('DATA.json', 'w') as outfile:
+        json.dump({"users": []}, outfile, indent=4)
 
 def write_json(new_data, filename='DATA.json'):
-    with open(filename, 'r+') as file:
-        # First we load existing data into a dict.
-        file_data = json.load(file)
-        # Join new_data with file_data inside emp_details
+    try:
+        # Read existing data
+        with open(filename, 'r') as file:
+            file_data = json.load(file)
+
+        # Append new data
         file_data["users"].append(new_data)
-        # Sets file's current position at offset.
-        file.seek(0)
-        # convert back to json.
-        json.dump(file_data, file, indent=4)
+
+        # Write updated data
+        with open(filename, 'w') as file:
+            json.dump(file_data, file, indent=4)
+    except Exception as e:
+        print(f"Error writing to {filename}: {e}")
 
 
 df_tr = pd.read_csv('Medical_dataset/Training.csv')

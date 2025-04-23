@@ -1,1 +1,24 @@
-{"users": []}
+{
+    "users": [
+        {
+            "Name": "bharath",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
+        },
+        {
+            "Name": "dinesh",
+            "Age": 24,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "shivering",
+                "chills"
+            ]
+        }
+    ]
+}
