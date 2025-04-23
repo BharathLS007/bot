@@ -51,6 +51,27 @@ for i in range(len(df_tr)):
     disease.append(df_tr.iloc[i, -1])
 
 ####################################################            dont do anything in above         ###########################################################################################################
+# ################################ ACCURACY FUNCTION                            ##################################
+
+
+import pandas as pd
+from sklearn.metrics import accuracy_score
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+
+
+df_tt = pd.read_csv('Medical_dataset/Testing.csv')
+X_test = df_tt.iloc[:, :-1]
+y_test = df_tt.iloc[:, -1]
+knn_clf = joblib.load('model/knn.pkl')
+y_pred = knn_clf.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+print(f"Accuracy: {accuracy * 100:.2f}%")
+
+
+
+
 # #database connection 
 
 # Replace 'your_username' and 'your_password' with your MySQL credentials
@@ -104,7 +125,7 @@ def chat():
         age = session.get("age", 0)
         gender = session.get("gender", "Unknown")
 
-        save_patient_data(name, age, gender, disease, symptoms)
+        save_patient_data(name, age, gender, disease, symptoms )
 
         return jsonify({"response": f"You might have {disease}. Data saved!"})
     

@@ -19,6 +19,58 @@
                 "shivering",
                 "chills"
             ]
+        },
+        {
+            "Name": "subramani",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Drug Reaction",
+            "Sympts": [
+                "itching",
+                "itching",
+                "skin_rash",
+                "spotting_ urination"
+            ]
+        },
+        {
+            "Name": "sai",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
+        },
+        {
+            "Name": "stephin",
+            "Age": 23,
+            "Gender": "MALE",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
+        },
+        {
+            "Name": "mubeer",
+            "Age": 21,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "shivering",
+                "chills"
+            ]
+        },
+        {
+            "Name": "bharath",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
         }
     ]
 }
