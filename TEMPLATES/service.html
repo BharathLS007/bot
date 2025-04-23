@@ -37,38 +37,864 @@
             </div>
         </div>
     </nav>
-        <!-- Services Section -->
-        <section id="services" class="py-5 bg-light">
+    <section id="services-hero" class="hero-section">
+        <div class="hero-overlay d-flex align-items-center">
             <div class="container">
-                <h2 class="text-center fw-bold mb-5">Our Services</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h3 class="h5 fw-semibold mb-3">Primary Care</h3>
-                                <p class="text-muted mb-0">Comprehensive health care for patients of all ages.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4">Our Medical Services</h1>
+                        <p class="lead text-white mb-5">Comprehensive healthcare solutions tailored to your needs. We offer a wide range of medical services with a focus on quality and patient satisfaction.</p>
+                        <a href="#service-categories" class="btn btn-primary btn-lg px-5">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Section -->
+    <section id="service-categories" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Comprehensive Healthcare Solutions</h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">Our medical center offers a wide range of services to meet all your healthcare needs under one roof.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Category 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Preventive Care</h3>
+                            <p class="text-secondary mb-3">Services focused on preventing illness and detecting health issues before they become serious.</p>
+                            <a href="#preventive" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-clipboard2-pulse text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Diagnostic Services</h3>
+                            <p class="text-secondary mb-3">Advanced diagnostic tools and tests to accurately identify and assess medical conditions.</p>
+                            <a href="#diagnostic" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-hospital text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Specialized Treatment</h3>
+                            <p class="text-secondary mb-3">Expert care in various medical specialties to address specific health conditions and needs.</p>
+                            <a href="#specialized" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-bandaid text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Surgical Procedures</h3>
+                            <p class="text-secondary mb-3">From minor outpatient procedures to complex surgeries performed by skilled surgeons.</p>
+                            <a href="#surgical" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-alarm text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Emergency Care</h3>
+                            <p class="text-secondary mb-3">24/7 emergency medical services for immediate treatment of acute illnesses and injuries.</p>
+                            <a href="#emergency" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-person-hearts text-primary fs-3"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Wellness Programs</h3>
+                            <p class="text-secondary mb-3">Comprehensive wellness programs designed to promote overall health and prevent disease.</p>
+                            <a href="#wellness" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preventive Care Section -->
+    <section id="preventive" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Preventive Care" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Preventive Care Services</h2>
+                    <p class="mb-4">Our preventive care services are designed to help you maintain good health and catch potential issues early. Regular check-ups and screenings can help prevent serious health problems or detect them at an early, more treatable stage.</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="fw-semibold mb-3">Our Preventive Services Include:</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Annual Physical Exams
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Immunizations
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Health Risk Assessments
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Cancer Screenings
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Cardiovascular Screenings
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Wellness Counseling
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h3 class="h5 fw-semibold mb-3">Specialized Treatment</h3>
-                                <p class="text-muted mb-0">Expert care in various medical specialties.</p>
+                    
+                    <a href="#" class="btn btn-primary">Schedule a Preventive Check-up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnostic Services Section -->
+    <section id="diagnostic" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Diagnostic Services" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="fw-bold mb-4">Diagnostic Services</h2>
+                    <p class="mb-4">Our state-of-the-art diagnostic services utilize advanced technology to provide accurate and timely results. Our experienced technicians and physicians work together to ensure precise diagnoses for effective treatment planning.</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="fw-semibold mb-3">Available Diagnostic Services:</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Laboratory Testing
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        X-Ray Imaging
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        CT Scans
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        MRI Scans
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Ultrasound
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        Cardiac Testing
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h3 class="h5 fw-semibold mb-3">Emergency Care</h3>
-                                <p class="text-muted mb-0">24/7 emergency medical services.</p>
+                    
+                    <a href="#" class="btn btn-primary">Learn About Our Technology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Treatment Section -->
+    <section id="specialized" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Specialized Treatment Services</h2>
+            
+            <div class="row g-4">
+                <!-- Specialty 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-heart text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Cardiology</h5>
+                            </div>
+                            <p class="card-text text-secondary">Comprehensive care for heart conditions with advanced diagnostic and treatment options for patients of all ages.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Heart Disease Management
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Cardiac Rehabilitation
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Pacemaker Management
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-brain text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Neurology</h5>
+                            </div>
+                            <p class="card-text text-secondary">Expert diagnosis and treatment of disorders of the nervous system, brain, and spinal cord using the latest techniques.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Stroke Treatment
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Epilepsy Management
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Headache Clinic
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-lungs text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Pulmonology</h5>
+                            </div>
+                            <p class="card-text text-secondary">Specialized care for respiratory conditions and lung diseases with a focus on improving breathing and quality of life.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Asthma Management
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    COPD Treatment
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Sleep Apnea Services
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-people text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Pediatrics</h5>
+                            </div>
+                            <p class="card-text text-secondary">Specialized healthcare for infants, children, and adolescents up to 18 years of age in a child-friendly environment.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Well-Child Visits
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Childhood Immunizations
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Developmental Assessments
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-bone text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Orthopedics</h5>
+                            </div>
+                            <p class="card-text text-secondary">Treatment of musculoskeletal conditions affecting bones, joints, muscles, and ligaments for patients of all ages.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Joint Replacement
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Sports Medicine
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Fracture Care
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                    <i class="bi bi-gender-female text-primary"></i>
+                                </div>
+                                <h5 class="card-title mb-0">Women's Health</h5>
+                            </div>
+                            <p class="card-text text-secondary">Comprehensive healthcare services specifically designed to address women's unique health needs at every stage of life.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    OB/GYN Services
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Mammography
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-dot text-primary me-2 fs-5"></i>
+                                    Menopause Management
+                                </li>
+                            </ul>
+                            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary px-4">View All Specialties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surgical Procedures Section -->
+    <section id="surgical" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Surgical Procedures" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Surgical Procedures</h2>
+                    <p class="mb-4">Our surgical department offers a wide range of procedures performed by experienced surgeons using the latest techniques and equipment. We prioritize patient safety and comfort throughout the surgical process.</p>
+                    
+                    <div class="accordion" id="surgicalAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#surgicalOne">
+                                    General Surgery
+                                </button>
+                            </h2>
+                            <div id="surgicalOne" class="accordion-collapse collapse show" data-bs-parent="#surgicalAccordion">
+                                <div class="accordion-body">
+                                    Our general surgery services include procedures such as appendectomy, hernia repair, gallbladder removal, and other common surgical interventions. Our surgeons use minimally invasive techniques when possible to reduce recovery time.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#surgicalTwo">
+                                    Orthopedic Surgery
+                                </button>
+                            </h2>
+                            <div id="surgicalTwo" class="accordion-collapse collapse" data-bs-parent="#surgicalAccordion">
+                                <div class="accordion-body">
+                                    Our orthopedic surgeons specialize in procedures such as joint replacements, arthroscopy, fracture repair, and spinal surgery. We use advanced techniques and materials to ensure the best possible outcomes for our patients.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#surgicalThree">
+                                    Minimally Invasive Procedures
+                                </button>
+                            </h2>
+                            <div id="surgicalThree" class="accordion-collapse collapse" data-bs-parent="#surgicalAccordion">
+                                <div class="accordion-body">
+                                    We offer a variety of minimally invasive surgical options, including laparoscopic and endoscopic procedures. These techniques typically result in smaller incisions, less pain, and faster recovery times compared to traditional open surgery.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary mt-4">Learn About Our Surgical Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Care Section -->
+    <section id="emergency" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Emergency Care" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="fw-bold mb-4">Emergency Care</h2>
+                    <p class="mb-4">Our emergency department is open 24 hours a day, 7 days a week, providing immediate care for acute illnesses and injuries. Our team of emergency medicine specialists is equipped to handle a wide range of medical emergencies.</p>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">When to Visit the Emergency Department:</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+                                    Chest pain or difficulty breathing
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+                                    Severe abdominal pain
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+                                    Sudden severe headache
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+                                    Major injuries or trauma
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+                                    Uncontrolled bleeding
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-telephone-fill text-primary fs-3 me-3"></i>
+                        <div>
+                            <p class="mb-0 fw-bold">Emergency Hotline</p>
+                            <h4 class="text-primary">(555) 911-1234</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Programs Section -->
+    <section id="wellness" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Wellness Programs</h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">Our wellness programs are designed to help you achieve and maintain optimal health through preventive care, education, and lifestyle modifications.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Program 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="Weight Management">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Weight Management</h5>
+                            <p class="card-text text-secondary mb-3">A comprehensive program that combines nutrition counseling, exercise planning, and behavioral strategies to help you achieve and maintain a healthy weight.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="Stress Management">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Stress Management</h5>
+                            <p class="card-text text-secondary mb-3">Learn effective techniques to manage stress and improve your mental wellbeing through mindfulness, relaxation exercises, and cognitive strategies.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="Smoking Cessation">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Smoking Cessation</h5>
+                            <p class="card-text text-secondary mb-3">A supportive program to help you quit smoking through a combination of counseling, medication options, and ongoing support from healthcare professionals.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Transparent Pricing</h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">We believe in transparent pricing for our services. Below are the starting prices for some of our common services. Please contact us for detailed pricing information.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Price Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3 text-center">Basic Check-up</h5>
+                            <div class="text-center mb-4">
+                                <span class="display-5 fw-bold text-primary">$99</span>
+                                <span class="text-secondary">/visit</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Physical Examination
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Basic Blood Work
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Blood Pressure Check
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Medical History Review
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Basic Health Recommendations
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Price Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 border border-primary">
+                        <div class="card-header bg-primary text-white text-center py-3">
+                            <h6 class="mb-0 fw-bold">Most Popular</h6>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3 text-center">Comprehensive Exam</h5>
+                            <div class="text-center mb-4">
+                                <span class="display-5 fw-bold text-primary">$199</span>
+                                <span class="text-secondary">/visit</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    All Basic Check-up Services
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Comprehensive Blood Panel
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Urinalysis
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    EKG
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Personalized Health Plan
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Price Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3 text-center">Executive Health Package</h5>
+                            <div class="text-center mb-4">
+                                <span class="display-5 fw-bold text-primary">$399</span>
+                                <span class="text-secondary">/visit</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    All Comprehensive Exam Services
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Advanced Imaging (if needed)
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Stress Test
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Nutritional Consultation
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Follow-up Visit Included
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="text-center mt-4">
+                <p class="text-secondary">* Insurance coverage may apply. Please contact our billing department for details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">What Our Patients Say</h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">We take pride in providing exceptional care to our patients. Here's what some of them have to say about their experience with our services.</p>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-center fst-italic mb-4">"The cardiology department at MediCare is exceptional. Dr. Johnson diagnosed my heart condition quickly and developed a treatment plan that has significantly improved my quality of life. The entire staff was professional, caring, and thorough throughout my treatment."</p>
+                                    <div class="text-center">
+                                        <h5 class="fw-bold mb-0">Robert Anderson</h5>
+                                        <p class="text-secondary">Cardiology Patient</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-center fst-italic mb-4">"I've been participating in the weight management program for three months, and the results have been amazing. The nutritionist and fitness coach developed a personalized plan that works with my lifestyle. I've lost 20 pounds and feel better than I have in years!"</p>
+                                    <div class="text-center">
+                                        <h5 class="fw-bold mb-0">Jennifer Martinez</h5>
+                                        <p class="text-secondary">Wellness Program Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Ready to Schedule Your Appointment?</h2>
+                    <p class="lead mb-0">Our team of healthcare professionals is ready to provide you with the care you deserve. Book your appointment today.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg px-4">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4">MediCare</h5>
+                    <p class="mb-4">Providing exceptional healthcare services with a focus on patient comfort and cutting-edge medical technology.</p>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="service.html" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cardiology</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Neurology</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pediatrics</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Orthopedics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-geo-alt me-3 mt-1"></i>
+                            <span>123 Medical Center Drive<br>Healthville, CA 90210</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-telephone me-3 mt-1"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="bi bi-envelope me-3 mt-1"></i>
+                            <span>info@medicare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> MediCare. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-3">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
