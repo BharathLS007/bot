@@ -181,6 +181,16 @@
                 "headache",
                 "shivering"
             ]
+        },
+        {
+            "Name": "unknown",
+            "Age": 40,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }
