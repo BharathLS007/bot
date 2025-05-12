@@ -171,6 +171,16 @@
                 "cold_hands_and_feets",
                 "headache"
             ]
+        },
+        {
+            "Name": "dynamic",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "headache",
+                "shivering"
+            ]
         }
     ]
 }

@@ -2,17 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book an Appointment | HealthyLife Hospital</title>
-  <link rel="stylesheet" href="../static/Appointment.css">
+    <title>MediCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/style.css">  <link rel="stylesheet" href="../static/Appointment.css">
 </head>
 <body>
 
   <header>
-    <div class="header-content">
-      <img src="hospital-logo.png" alt="HealthyLife Hospital" class="logo">
-      <h1>HealthyLife Hospital</h1>
-      <p>Your health, our priority</p>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary me-2">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+                <span class="fw-semibold">MediCare</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   </header>
 
   <section class="form-section">
@@ -42,8 +71,77 @@
     </form>
   </section>
 
-  <footer>
-    <p>&copy; 2025 HealthyLife Hospital. All rights reserved.</p>
+  <footer class="bg-dark text-white py-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                  <h5 class="fw-bold mb-4">MediCare</h5>
+                  <p class="mb-4">Providing exceptional healthcare services with a focus on patient comfort and cutting-edge medical technology.</p>
+                  <div class="d-flex gap-3 mb-3">
+                      <a href="#" class="text-white">
+                          <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="#" class="text-white">
+                          <i class="bi bi-twitter"></i>
+                      </a>
+                      <a href="#" class="text-white">
+                          <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="#" class="text-white">
+                          <i class="bi bi-linkedin"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <h5 class="fw-bold mb-4">Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="/" class="text-white text-decoration-none">Home</a></li>
+                      <li class="mb-2"><a href="about" class="text-white text-decoration-none">About Us</a></li>
+                      <li class="mb-2"><a href="service" class="text-white text-decoration-none">Services</a></li>
+                      <li><a href="contact" class="text-white text-decoration-none">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <h5 class="fw-bold mb-4">Our Services</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cardiology</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Neurology</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pediatrics</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Orthopedics</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <h5 class="fw-bold mb-4">Contact Info</h5>
+                  <ul class="list-unstyled">
+                      <li class="d-flex mb-3">
+                          <i class="bi bi-geo-alt me-3 mt-1"></i>
+                          <span>123 Medical Center Drive<br>Healthville, CA 90210</span>
+                      </li>
+                      <li class="d-flex mb-3">
+                          <i class="bi bi-telephone me-3 mt-1"></i>
+                          <span>(123) 456-7890</span>
+                      </li>
+                      <li class="d-flex">
+                          <i class="bi bi-envelope me-3 mt-1"></i>
+                          <span>info@medicare.com</span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="my-4 border-secondary">
+          <div class="row">
+              <div class="col-md-6 mb-3 mb-md-0">
+                  <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> MediCare. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <ul class="list-inline mb-0">
+                      <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                      <li class="list-inline-item mx-3">|</li>
+                      <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
   </footer>
 
 </body>
