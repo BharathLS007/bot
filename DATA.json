@@ -151,6 +151,26 @@
                 "cold_hands_and_feets",
                 "headache"
             ]
+        },
+        {
+            "Name": "sasas",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "sasd",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }

@@ -384,6 +384,10 @@ def contact():
 def service():
     return render_template("service.html")
 
+@app.route("/Appointment")
+def Appointment():
+    return render_template("Appointment.html")
+
 
 @app.route("/get")
 def get_bot_response():
@@ -685,7 +689,7 @@ def get_bot_response():
     if session['step'] == "Severity":
         session['step'] = 'FINAL'
         if calc_condition(session["all"], int(s)) == 1:
-            return f'You should take the consultation from a doctor. <br> <a href="{url_for("contact")}">Click here to book an appointment</a> <br> Tap q to exit'
+            return f'You should take the consultation from a doctor. <br> <a href="{url_for("Appointment")}">Click here to book an appointment</a> <br> Tap q to exit'
         else:
             msg = 'Nothing to worry about, but you should take the following precautions :<br> '
             i = 1

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book an Appointment | HealthyLife Hospital</title>
+  <link rel="stylesheet" href="../static/Appointment.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="hospital-logo.png" alt="HealthyLife Hospital" class="logo">
+      <h1>HealthyLife Hospital</h1>
+      <p>Your health, our priority</p>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <h2>Book a Medical Appointment</h2>
+    <form action="/submit-appointment" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="0" placeholder="Enter Your Age" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter Your Phone Number" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter your full address" required></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthyLife Hospital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
