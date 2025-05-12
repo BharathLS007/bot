@@ -8,7 +8,7 @@ from spacy.lang.en.stop_words import STOP_WORDS
 import spacy
 import en_core_web_sm
 import joblib
-from flask import Flask, render_template, request, session ,jsonify
+from flask import Flask, render_template, request, session ,jsonify,url_for
 from flask_sqlalchemy import SQLAlchemy
 import matplotlib.pyplot as plt
 import os
@@ -54,44 +54,6 @@ for i in range(len(df_tr)):
 # ################################ ACCURACY FUNCTION                            ##################################
 
 
-
-# #database connection 
-
-# Replace 'your_username' and 'your_password' with your MySQL credentials
-
-# ✅ Function to store patient data
-# def save_patient_data(name, age, gender, disease, symptoms):
-#     try:
-#         db = mysql.connector.connect(
-#             host="localhost",
-#             user="roor",
-#             password="Bharath",
-#             database="medical"
-#         )
-#         cursor = db.cursor()
-# 
-#         # Check if table exists
-#         cursor.execute("SHOW TABLES LIKE 'patients';")
-#         result = cursor.fetchone()
-#         if not result:
-#             print("❌ Table 'patients' does not exist!")
-#             return
-# 
-#         # Insert data
-#         query = "INSERT INTO patients (name, age, gender, disease, symptoms) VALUES (%s, %s, %s, %s, %s)"
-#         values = (name, age, gender, disease, symptoms)
-# 
-#         cursor.execute(query, values)
-#         db.commit()
-# 
-#         print("✅ Data inserted successfully!")
-# 
-#     except mysql.connector.Error as err:
-#         print(f"❌ Error: {err}")
-# 
-#     finally:
-#         cursor.close()
-#         db.close()
 
 
 # ✅ Flask Route to Handle Chatbot Interaction
@@ -723,7 +685,7 @@ def get_bot_response():
     if session['step'] == "Severity":
         session['step'] = 'FINAL'
         if calc_condition(session["all"], int(s)) == 1:
-            return "you should take the consultation from doctor <br> Tap q to exit"
+            return f'You should take the consultation from a doctor. <br> <a href="{url_for("contact")}">Click here to book an appointment</a> <br> Tap q to exit'
         else:
             msg = 'Nothing to worry about, but you should take the following precautions :<br> '
             i = 1

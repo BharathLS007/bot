@@ -91,6 +91,66 @@
                 "chills",
                 "shivering"
             ]
+        },
+        {
+            "Name": "sas",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "saia",
+            "Age": 32,
+            "Gender": "female",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "saias",
+            "Age": 23,
+            "Gender": "female",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "bha",
+            "Age": 3,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "sus",
+            "Age": 28,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "santho",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }
