@@ -191,6 +191,36 @@
                 "cold_hands_and_feets",
                 "headache"
             ]
+        },
+        {
+            "Name": "test",
+            "Age": 40,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "yellow_crust_ooze",
+                "headache"
+            ]
+        },
+        {
+            "Name": "unknown",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "dark",
+            "Age": 12,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }

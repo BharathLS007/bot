@@ -88,7 +88,26 @@ def user_info():
 
 
 
+####################################################      appointments.json section testing              ###########################################################################################################
+
+ 
+@app.route("/submit_appointment", methods=["POST"])
+def submit_appointment():
+    name = request.form["name"]
+    age = request.form["age"]
+    gender = request.form["gender"]
+    disease = request.form["symptoms"]
+
+    # Store appointment details (can save to database or JSON)
+    appointment_data = {"name": name, "age": age, "gender": gender, "disease": disease}
+
+    write_json(appointment_data, "appointments.json")  # Save appointment info
+
+    return "Your appointment has been scheduled successfully!"
+
+
 ####################################################            dont do anything in below         ###########################################################################################################
+
 
     
 # # I- GET ALL SYMPTOMS
@@ -386,6 +405,10 @@ def service():
 
 @app.route("/Appointment")
 def Appointment():
+    name = request.args.get("name", "Unknown")
+    age = request.args.get("age", "Unknown")
+    gender = request.args.get("gender", "Unknown")
+    disease = request.args.get("disease", "Unknown")
     return render_template("Appointment.html")
 
 
@@ -689,7 +712,15 @@ def get_bot_response():
     if session['step'] == "Severity":
         session['step'] = 'FINAL'
         if calc_condition(session["all"], int(s)) == 1:
-            return f'You should take the consultation from a doctor. <br> <a href="{url_for("Appointment")}">Click here to book an appointment</a> <br> Tap q to exit'
+             name = session.get("name", "Unknown")
+             age = session.get("age", 0)
+             gender = session.get("gender", "Unknown")
+             disease = session.get("disease", "Unknown")
+        
+             # Construct a URL with user details as query parameters
+             booking_url = url_for("Appointment", name=name, age=age, gender=gender, disease=disease)
+
+             return f'You should take the consultation from a doctor. <br> <a href="{url_for("Appointment")}">Click here to book an appointment</a> <br> Tap q to exit'
         else:
             msg = 'Nothing to worry about, but you should take the following precautions :<br> '
             i = 1
@@ -714,25 +745,6 @@ def get_bot_response():
             return "HELLO again Mr/Ms " + session["name"] + " Please tell me your main symptom. "
         else:
             return "THANKS Mr/Ms " + name + " for using our service"
-
-
-
-import pandas as pd
-from sklearn.metrics import accuracy_score
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
-
-
-df_tt = pd.read_csv('Medical_dataset/Testing.csv')
-X_test = df_tt.iloc[:, :-1]
-y_test = df_tt.iloc[:, -1]
-knn_clf = joblib.load('model/knn.pkl')
-y_pred = knn_clf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
-print(f"Accuracy: {accuracy * 100:.2f}%")
-
-
 
 
 if __name__ == "__main__":
