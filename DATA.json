@@ -193,33 +193,56 @@
             ]
         },
         {
-            "Name": "test",
-            "Age": 40,
+            "Name": "aasas",
+            "Age": 23,
             "Gender": "male",
             "Disease": "Paralysis (brain hemorrhage)",
             "Sympts": [
-                "yellow_crust_ooze",
+                "cold_hands_and_feets",
                 "headache"
             ]
         },
         {
-            "Name": "unknown",
+            "Name": "bharath",
             "Age": 32,
             "Gender": "male",
-            "Disease": "Paralysis (brain hemorrhage)",
+            "Disease": "Allergy",
             "Sympts": [
-                "cold_hands_and_feets",
-                "headache"
+                "chills",
+                "headache",
+                "cough"
             ]
         },
         {
-            "Name": "dark",
-            "Age": 12,
+            "Name": "Bharath",
+            "Age": 23,
             "Gender": "male",
             "Disease": "Paralysis (brain hemorrhage)",
             "Sympts": [
-                "cold_hands_and_feets",
-                "headache"
+                "chills",
+                "headache",
+                "vomiting",
+                "abdominal_pain"
+            ]
+        },
+        {
+            "Name": "sasi",
+            "Age": 30,
+            "Gender": "male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
+            ]
+        },
+        {
+            "Name": "Bharath",
+            "Age": 23,
+            "Gender": "Male",
+            "Disease": "Allergy",
+            "Sympts": [
+                "chills",
+                "shivering"
             ]
         }
     ]
