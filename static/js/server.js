@@ -22,3 +22,8 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     document.getElementById('thankYouMsg').style.display = 'block';
     document.getElementById('contactForm').reset();
 });
+
+
+
+
+
