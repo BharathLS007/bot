@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt  # Import Matplotlib
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, precision_score, recall_score, f1_score
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -79,7 +80,27 @@ if accuracy > 0.85:
 # Recalculate accuracy after controlled misclassification
 accuracy = accuracy_score(y_test, y_pred)
 
+# Compute Precision, Recall, and F1-score
+precision = precision_score(y_test, y_pred, average='macro')
+recall = recall_score(y_test, y_pred, average='macro')
+f1 = f1_score(y_test, y_pred, average='macro')
+
 # Display results
-print(f"\ Test Accuracy: {accuracy:.2f} ")
+print(f"\n Test Accuracy: {accuracy:.2f} ")
+print(f"Precision: {precision:.2f}")
+print(f"Recall: {recall:.2f}")
+print(f"F1-Score: {f1:.2f}")
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
+# **Plot Accuracy, Precision, Recall, F1-Score**
+metrics = ['Accuracy', 'Precision', 'Recall', 'F1-Score']
+values = [accuracy, precision, recall, f1]
+
+plt.figure(figsize=(8, 5))
+plt.bar(metrics, values, color=['blue', 'green', 'red', 'purple'])
+plt.ylim(0, 1)  # Limiting y-axis to max 1 (100%)
+plt.xlabel("Metrics")
+plt.ylabel("Score")
+plt.title("Performance Evaluation of KNN Model")
+plt.show()
