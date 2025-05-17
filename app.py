@@ -405,7 +405,17 @@ def get_bot_response():
                 session["name"] = name
                 session["age"] = age
                 session["gender"] = gender
-    if s.upper() == "HI":
+    if s.upper() in ["HI", "HELLO", "HEY", "GREETINGS", "NAMASTE", "VANAKKAM", "NAMASKARAM", "NAMASKARA", "PRANAM", "SASTRIYAKAL", "KEM CHO", "KHAMOSH", "NOMOSKAR","HOLA", "BUENOS DÍAS", "SALUDOS", "QUE TAL",  # Spanish
+                    "BONJOUR", "SALUT", "COUCOU",  # French
+                    "HALLO", "GUTEN TAG", "SERVUS", "GRÜSS DICH",  # German
+                    "CIAO", "SALVE", "BUONGIORNO", "BUONASERA",  # Italian
+                    "OLÁ", "BOM DIA", "BOA TARDE", "SAUDAÇÕES",  # Portuguese
+                    "SZIA", "JÓ NAPOT", "ÜDVÖZÖLLEK",  # Hungarian
+                    "DAG", "GOEDEMORGEN", "GOEIENDAG", "HOI",  # Dutch
+                    "HEJ", "GOD DAG", "GOD MORGON",  # Swedish
+                    "HALLO", "GOD DAG", "GOD MANDAG",  # Norwegian
+
+]:
         return "What is your name ?"
     if 'name' not in session and 'step' not in session:
         session['name'] = s
@@ -714,24 +724,6 @@ def get_bot_response():
             return "HELLO again Mr/Ms " + session["name"] + " Please tell me your main symptom. "
         else:
             return "THANKS Mr/Ms " + name + " for using our service"
-
-
-
-import pandas as pd
-from sklearn.metrics import accuracy_score
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
-
-
-df_tt = pd.read_csv('Medical_dataset/Testing.csv')
-X_test = df_tt.iloc[:, :-1]
-y_test = df_tt.iloc[:, -1]
-knn_clf = joblib.load('model/knn.pkl')
-y_pred = knn_clf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
-print(f"Accuracy: {accuracy * 100:.2f}%")
-
 
 
 

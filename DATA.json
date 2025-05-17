@@ -244,6 +244,16 @@
                 "chills",
                 "shivering"
             ]
+        },
+        {
+            "Name": "bot",
+            "Age": 32,
+            "Gender": "m",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }
