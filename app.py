@@ -55,6 +55,36 @@ for i in range(len(df_tr)):
 
 
 
+@app.route('/submit-appointment', methods=['POST'])
+def submit_appointment():
+    content = request.get_json()
+    data = {
+        "name": content.get('name'),
+        "age": content.get('age'),
+        "gender": content.get('gender'),
+        "phone": content.get('phone'),
+        "address": content.get('address')
+    }
+
+
+    # Save to submission.json
+    submissions_file = 'submission.json'
+
+    if os.path.exists(submissions_file):
+        with open(submissions_file, 'r') as f:
+            try:
+                submissions = json.load(f)
+            except json.JSONDecodeError:
+                submissions = []
+    else:
+        submissions = []
+
+    submissions.append(data)
+
+    with open(submissions_file, 'w') as f:
+        json.dump(submissions, f, indent=4)
+
+    return jsonify({"message": "Appointment submitted successfully."})
 
 # ✅ Flask Route to Handle Chatbot Interaction
 @app.route("/chat", methods=["POST"])
