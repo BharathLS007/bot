@@ -1,5 +1,11 @@
 [
-
+    {
+        "name": "asdasd",
+        "age": "20",
+        "gender": "male",
+        "phone": "9876543210",
+        "address": "dadasdsadas"
+    },
     {
         "name": "asdasd",
         "age": "20",

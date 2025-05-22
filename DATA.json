@@ -254,6 +254,36 @@
                 "cold_hands_and_feets",
                 "headache"
             ]
+        },
+        {
+            "Name": "Bharath",
+            "Age": 23,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
+        },
+        {
+            "Name": "h",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Impetigo",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "yellow_crust_ooze"
+            ]
+        },
+        {
+            "Name": "ters",
+            "Age": 32,
+            "Gender": "male",
+            "Disease": "Paralysis (brain hemorrhage)",
+            "Sympts": [
+                "cold_hands_and_feets",
+                "headache"
+            ]
         }
     ]
 }
